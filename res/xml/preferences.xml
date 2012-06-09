@@ -1,0 +1,32 @@
+<PreferenceScreen	xmlns:android="http://schemas.android.com/apk/res/android" android:title="TwitTL" android:order="10">
+	
+	<!--
+		Add your additional preferences here.
+	-->
+
+
+
+<!-- 
+<Preference android:key="OAuth" android:title="OAuth" android:order="10"></Preference>
+ -->
+
+
+<PreferenceCategory android:key="TL Select" android:title="TL Select" android:order="20">
+
+<CheckBoxPreference android:title="HOME TL" android:key="HOMETLEnabled" android:order="10" android:selectable="true" android:defaultValue="true" android:enabled="false"></CheckBoxPreference>
+
+<CheckBoxPreference android:defaultValue="true" android:order="20" android:key="MentionsEnabled" android:title="Mentions" android:enabled="true"></CheckBoxPreference>
+<CheckBoxPreference android:title="DMs" android:order="30" android:key="DMsEnabled" android:defaultValue="true" android:enabled="true"></CheckBoxPreference>
+
+
+<CheckBoxPreference android:order="40" android:key="ListsEnabled" android:enabled="true" android:title="Lists (/twittl)" android:defaultValue="false"></CheckBoxPreference>
+
+</PreferenceCategory>
+<PreferenceCategory android:key="Other" android:title="Other" android:order="30">
+<CheckBoxPreference android:defaultValue="true" android:title="Reload at the start" android:key="ReloadAtTheStart" android:enabled="true" android:order="100"></CheckBoxPreference>
+
+<ListPreference android:title="Font Size" android:selectable="true" android:entryValues="@array/fontSizevalues" android:entries="@array/fontSize" android:defaultValue="12" android:key="FontSize" android:order="200"></ListPreference>
+
+</PreferenceCategory>
+
+</PreferenceScreen>
